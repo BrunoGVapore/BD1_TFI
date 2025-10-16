@@ -13,7 +13,7 @@ Este repositorio contiene la carpeta digital oficial para la entrega del **Traba
 | **Bruno Giuliano Vapore**    | `brunogvapore@gmail.com`           |
 | **Agustín Sotelo Carmelich** | `agustinemiliano22@gmail.com`      |
 | **Santiago Octavio Varela**  | `santiago.varela@tupad.utn.edu.ar` |
-| **Diego Alejandro Velardes** | `[Correo Electrónico]`             |
+| **Diego Alejandro Velardes** | `velardesdiego@gmail.com`             |
 
 ## 📌 Requisitos y Fecha de Entrega
 
