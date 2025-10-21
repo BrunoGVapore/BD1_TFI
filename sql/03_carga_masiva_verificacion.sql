@@ -5,7 +5,7 @@
 -- Propósito: Verificar la consistencia de los datos después de 
 --            la ejecución de la carga masiva (03_carga_masiva.sql).
 -- --------------------------------------------------------------------
-
+SELECT VERSION();
 USE empleados;
 
 -- -----------------------------------------

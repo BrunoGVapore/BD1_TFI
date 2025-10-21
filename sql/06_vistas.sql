@@ -1,7 +1,7 @@
 -- --------------------------------------------------------------------
 -- Archivo: 06_vistas.sql
 -- TFI - Bases de Datos I
---
+
 -- Propósito: Crea las vistas diseñadas en la Etapa 3 para simplificar
 --            consultas frecuentes y ocultar datos sensibles.
 -- --------------------------------------------------------------------
@@ -19,10 +19,10 @@ SELECT
     e.fechaIngreso,
     l.nroLegajo,
     l.categoria,
-    l.estado -- Siempre será 'ACTIVO' por el WHERE
+    l.estado
 FROM empleado e
 JOIN legajo l ON e.id = l.empleado_id
-WHERE l.estado = 'ACTIVO'; [cite_start]-- [cite: 297-309]
+WHERE l.estado = 'ACTIVO';
 
 -- Vista 2: Empleados Públicos (sin datos sensibles)
 -- Utilidad: Expone información general para reportes, ocultando DNI, email, etc.
@@ -34,4 +34,4 @@ SELECT
     l.categoria,
     l.estado
 FROM empleado e
-JOIN legajo l ON e.id = l.empleado_id; [cite_start]-- [cite: 315-323]
+JOIN legajo l ON e.id = l.empleado_id
