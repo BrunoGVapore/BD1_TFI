@@ -2,9 +2,9 @@
 -- Archivo: 08_transacciones.sql
 -- TFI - Bases de Datos I
 
--- Propósito: Este script, perteneciente a la Etapa 5, configura las transacciones de la base de datos empleados,
---            creando tablas para registrar transacciones, generando procedimientos almacenados para
---            registrar y consultar transacciones y estableciendo restricciones para garantizar la integridad de los datos.
+-- Propósito: Este script, perteneciente a la Etapa 5, crea una tabla de registro de errores y un procedimiento llamado
+--            "transferir_area" el cual contiene una transacción y dos HANDLERS de errores, uno para Deadlocks y otro general.
+--            También contiene una simulación de un error general, para el error de Deadlock ver 09_concurrencia_guiada.sql
 -- --------------------------------------------------------------------
 
 USE empleados;
@@ -71,4 +71,19 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+-- Llamamos al procedimiento de la siguiente manera:
+CALL transferir_area(1234, 'Tecnologia', 'El empleado se transfiere de área, actualizar salario');
+
+-- Simulación de un error general en el procedimiento para el registro:
+RENAME TABLE legajo TO legajo_temp;
+CALL transferir_area(1234, 'Finanzas', 'Cambio de prueba');
+RENAME TABLE legajo_temp TO legajo;
+
+-- Para ver el listado de errores generados en orden descendente por fecha usamos:
+SELECT * FROM registro_errores ORDER BY fecha DESC;
+
+
+
+
 
