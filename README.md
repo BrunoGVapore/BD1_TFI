@@ -26,7 +26,7 @@ A continuación se detallan los requisitos clave y la fecha límite para la prim
 | **Componente 2**    | Video Explicativo (Duración estricta: 10 a 15 minutos).      |
 | **Requisito Video** | Presentación con cámara encendida por todos los integrantes. |
 | **Fecha Límite**    | **17 de Noviembre de 2025**                                  |
-| **Link al Video**   | ENLACE AL VIDEO                                              |
+| **Link al Video**   | https://youtu.be/JVb5A0feVII                                              |
 
 ---
 
